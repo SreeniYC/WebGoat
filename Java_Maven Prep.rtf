@@ -1,0 +1,127 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fnil\fcharset0 Monaco;
+\f3\fswiss\fcharset0 Helvetica;\f4\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue117;\red83\green85\blue2;\red16\green121\blue2;
+\red11\green84\blue83;\red49\green49\blue49;\red38\green38\blue38;\red135\green135\blue135;\red245\green245\blue247;
+\red133\green0\blue67;\red85\green138\blue3;\red12\green99\blue153;\red0\green61\blue204;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21260\viewh11080\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \ul \ulc0 JDK Installation
+\f1\fs28 \ulnone \
+\
+Check what version of JDK installed \
+$ /usr/libexec/java_home -V\
+\
+download java  JDK\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"}}{\fldrslt \cf0 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html}}\
+\
+\pard\pardeftab720\sl640\sa280\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+How to exit the VIM text editor\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+First, you need to switch to command mode. This can be done by hitting the [Escape]key. Next, you can type the following commands:\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+:q to quit.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+:q! to quit without saving data/file.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+:x save and quit.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+Please note that whenever you type :, a vim or vi : will appear at the bottom of the screen. You need to type the rest of the command at the bottom of the screen.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+\
+set JAVA_HOME Path \
+\pard\pardeftab720\sl380\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\shad\shadx0\shady-20\shadr0\shado255 \shadc0 $ vim .bash_profile\
+export JAVA_HOME=$(/usr/libexec/java_home)\
+\
+$ source .bash_profile\
+\
+$ echo $JAVA_HOME\
+/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home\
+\pard\pardeftab720\partightenfactor0
+\cf0 \shad0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+
+\f0\fs48 \ul Maven Installation
+\f1\fs28 \ulnone \
+download and extract to a folder\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://maven.apache.org/download.cgi"}}{\fldrslt \cf0 http://maven.apache.org/download.cgi}}\
+\
+Set $PATH variable to above extracted bin folder\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl400\partightenfactor0
+\ls2\ilvl0
+\f2\fs26 \cf2 {\listtext	1.	}\expnd0\expndtw0\kerning0
+export\cf0  PATH\cf3 =\cf4 /opt/\cf0 apache\cf3 -\cf0 maven\cf3 -\cf5 3.3\cf3 .\cf5 9\cf3 /\cf0 bin\cf3 :\cf0 $PATH\cf6 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://maven.apache.org/install.html"}}{\fldrslt \cf0 http://maven.apache.org/install.html}}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\fs36 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \ul Install Tomcat
+\f3\fs36 \ulnone \
+\
+Set 
+\f4 \expnd0\expndtw0\kerning0
+$CATALINA_HOME\kerning1\expnd0\expndtw0  
+\f3 variable to extracted dir (Not bin) folder\
+\
+run tomcat\
+sh setup.sh\
+\
+set permissions if necessary\
+chmod u+rwx *.*\
+\
+\pard\pardeftab720\sl520\sa200\partightenfactor0
+
+\f0\fs48 \cf7 \expnd0\expndtw0\kerning0
+\ul \ulc7 Steps of changing the Tomcat Port\ulnone \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f4\fs32 \cf7 1) Locate 
+\b server.xml
+\b0  in 
+\b \{Tomcat installation folder\}\\ conf \\
+\b0 \
+2) Find following similar statement\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f3\fs26 \cf8 \cb9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 <\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Connector \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 port\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 8080\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 maxHttpHeaderSize\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 8192\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+              \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 maxThreads\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 150\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 minSpareThreads\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 25\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 maxSpareThreads\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 75\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+              \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 enableLookups\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 false\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 redirectPort\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 8443\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 acceptCount\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 100\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+              \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 connectionTimeout\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 20000\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf11 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 disableUploadTimeout\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ="\cf12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 true\cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "\cf10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 />
+\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \shad0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\i \cf0 \ul \ulc0 Sample
+\f3\fs28 \cf13 \ulnone \
+export JAVA_HOME=$(/usr/libexec/java_home)\
+PATH=\'93/Users/sree/Desktop/Workshop/apache-maven-3.3.9/bin:$\{PATH\}\'94\
+export PATH\
+export CATALINA_HOME=/Users/sree/Desktop/Workshop/apache-tomcat-9.0.0.M11
+\i0\fs36 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf0 \
+\
+}
