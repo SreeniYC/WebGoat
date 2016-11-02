@@ -211,5 +211,5 @@ Switch back to the main WebGoat broswer tab and __reload the main WebGoat browse
 
 After the reload is complete, all labels which where loaded from a property file will be __marked green__.
 
-
+## Jenkins Integration
 
